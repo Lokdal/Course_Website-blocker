@@ -1,5 +1,8 @@
 {
 	"demo_version": "True",
-	"start_hour": "10",
-	"end_hour": "17"
+	"start_hour": "9",
+	"start_minutes": "0",
+	"end_hour": "17",
+	"end_minutes": "0",
+	"home_IP": "127.0.0.1"
 }
