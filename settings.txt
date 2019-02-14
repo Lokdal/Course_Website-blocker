@@ -1,0 +1,5 @@
+{
+	"demo_version": "True",
+	"start_hour": "10",
+	"end_hour": "17"
+}
