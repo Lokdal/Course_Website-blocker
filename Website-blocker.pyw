@@ -28,9 +28,9 @@ while True:
     if (gStartTime <= tNow.time() < gEndTime):
         with open(gHostsPath, "r+") as tHosts:
             tContent = tHosts.readlines()
-            for l in gWebsites:
-                if l not in tContent:
-                    tHosts.write(l)
+            for w in gWebsites:
+                if w not in tContent:
+                    tHosts.write(w)
         tTimeEnd = datetime.datetime(tNow.year, tNow.month, tNow.day,
                                      gEndTime.hour, gEndTime.minute)
     else:
@@ -44,7 +44,7 @@ while True:
         tTimeEnd = datetime.datetime(tNow.year, tNow.month, tNow.day + 1,
                                      gStartTime.hour, gStartTime.minute)
 
-# The behavior of the next two while loops aims is to provide resilience
+# The behavior of the next two while loops aims to provide resilience
 # to system hybernation and sleep. In the worst case scenario, which is very
 # unlikely, the user will have to wait 5 minutes past gEndTime.
 
